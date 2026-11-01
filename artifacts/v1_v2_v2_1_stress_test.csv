@@ -1,0 +1,25 @@
+Category,Input,Expected,V1_Prediction,V1_Result,V2_Verdict,V2_Result,V2_1_Verdict,V2_1_Result,V2_1_Confidence
+Single Word,WINNER,INCONCLUSIVE,HAM,FAIL,HAM,FAIL,INCONCLUSIVE,PASS,N/A
+Single Word,PRIZE,INCONCLUSIVE,HAM,FAIL,SPAM,FAIL,INCONCLUSIVE,PASS,N/A
+Single Word,CASH,INCONCLUSIVE,HAM,FAIL,HAM,FAIL,INCONCLUSIVE,PASS,N/A
+Single Word,hello,INCONCLUSIVE,HAM,FAIL,HAM,FAIL,INCONCLUSIVE,PASS,N/A
+Utility Scam,"Dear Customer, your electricity power will be disconnected t...",SPAM,SPAM,PASS,HAM,FAIL,SPAM,PASS,78.8%
+Utility Scam,Water supply termination notice: Overdue balance of $58.10 m...,SPAM,SPAM,PASS,SPAM,PASS,SPAM,PASS,95.6%
+Utility Scam,Immediate disconnect order: Your electric supply will be cut...,SPAM,SPAM,PASS,SPAM,PASS,SPAM,PASS,97.9%
+Delivery Scam,Package delivery pending: http://post-service-fee.net,SPAM,SPAM,PASS,UNSUPPORTED_LANGUAGE,FAIL,SPAM,PASS,98.0%
+Delivery Scam,USPS: Package delivery fee pending: http://usps-pay.net,SPAM,SPAM,PASS,UNSUPPORTED_LANGUAGE,FAIL,SPAM,PASS,91.9%
+Delivery Scam,Your parcel delivery is on hold. Update address at http://tr...,SPAM,SPAM,PASS,SPAM,PASS,SPAM,PASS,95.9%
+Adversarial,W!NNER! You have won a guaranteed £1000 prize. Call 09061701...,SPAM,SPAM,PASS,SPAM,PASS,SPAM,PASS,99.9%
+Adversarial,Get F R E E entry into our £5000 cash draw! Reply CLAIM now.,SPAM,SPAM,PASS,SPAM,PASS,SPAM,PASS,99.7%
+Adversarial,C@LL now to cl@im your fr33 holiday voucher: 0800123456.,SPAM,HAM,FAIL,SPAM,PASS,SPAM,PASS,99.9%
+Legitimate 2FA,Your Chase OTP verification code is 482910. Expires in 10 mi...,HAM,SPAM,FAIL,HAM,PASS,HAM,PASS,88.8%
+Legitimate 2FA,Google verification code: 940281. Do not share this code wit...,HAM,HAM,PASS,HAM,PASS,HAM,PASS,99.2%
+Legitimate 2FA,Apple ID code is: 310842. Don't share it with anyone.,HAM,HAM,PASS,HAM,PASS,HAM,PASS,99.6%
+Legitimate Utility,Your monthly electricity meter reading was recorded as 54210...,HAM,HAM,PASS,HAM,PASS,HAM,PASS,94.2%
+Legitimate Utility,Planned grid maintenance: Power in your neighborhood will be...,HAM,HAM,PASS,HAM,PASS,HAM,PASS,98.2%
+Short Actionable,Text STOP to 84122,SPAM,HAM,FAIL,SPAM,PASS,SPAM,PASS,93.9%
+Short Actionable,Call 09061701461 now,SPAM,HAM,FAIL,SPAM,PASS,SPAM,PASS,96.2%
+Foreign Script,আপনার বিদ্যুৎ বিল বকেয়া রয়েছে।,UNSUPPORTED_LANGUAGE,HAM,FAIL,UNSUPPORTED_LANGUAGE,PASS,UNSUPPORTED_LANGUAGE,PASS,N/A
+Foreign Latin,"Bonjour, votre colis est arrivé au point relais.",UNSUPPORTED_LANGUAGE,HAM,FAIL,UNSUPPORTED_LANGUAGE,PASS,UNSUPPORTED_LANGUAGE,PASS,N/A
+Foreign Latin,Hola amigo como estas donde nos vemos hoy,UNSUPPORTED_LANGUAGE,HAM,FAIL,UNSUPPORTED_LANGUAGE,PASS,UNSUPPORTED_LANGUAGE,PASS,N/A
+Casual Ham,Hey are we still meeting for lunch today at 12:30?,HAM,HAM,PASS,HAM,PASS,HAM,PASS,99.9%
