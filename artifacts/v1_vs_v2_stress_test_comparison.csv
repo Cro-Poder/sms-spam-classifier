@@ -1,0 +1,25 @@
+Category,Input,Expected,V1_Prediction,V1_Confidence,V1_Result,V2_Verdict,V2_Confidence,V2_Result,V2_Explanation
+Legitimate OTP / 2FA,Your Chase OTP verification code is 482910. Do not shar...,HAM,SPAM,96.7%,FAIL,HAM,93.8%,PASS,Calibrated model indicates high probability of legitimate communication.
+Legitimate OTP / 2FA,Google: 839201 is your verification code. Never share t...,HAM,HAM,100.0%,PASS,HAM,98.9%,PASS,Calibrated model indicates high probability of legitimate communication.
+Fraudulent OTP Phishing,Chase Fraud Alert: Did you send $500? Reply YES or NO. ...,SPAM,SPAM,100.0%,PASS,SPAM,88.6%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Bank Phishing Scam,ALERT: Your Barclays debit card has been suspended due ...,SPAM,SPAM,100.0%,PASS,SPAM,95.8%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Legitimate Delivery,UPS: Your package #1Z9842109 is out for delivery today ...,HAM,HAM,96.7%,PASS,HAM,96.1%,PASS,Calibrated model indicates high probability of legitimate communication.
+Delivery Fee Phishing,USPS: We attempted to deliver your package today but an...,SPAM,SPAM,100.0%,PASS,SPAM,91.6%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Legitimate Promotion,Starbucks: Double star day is tomorrow! Earn 2x stars o...,HAM,SPAM,98.6%,FAIL,HAM,70.2%,PASS,Calibrated model indicates high probability of legitimate communication.
+Legitimate Promotion,Nike: Members get early access to our seasonal sale. Sh...,HAM,SPAM,100.0%,FAIL,HAM,74.1%,PASS,Calibrated model indicates high probability of legitimate communication.
+Prize / Lottery Scam,You are the selected winner of the UK National Lottery ...,SPAM,SPAM,100.0%,PASS,SPAM,98.5%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Prize / Lottery Scam,Urgent! Claim your free £500 Amazon gift card before ex...,SPAM,SPAM,100.0%,PASS,SPAM,82.4%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Adversarial Obfuscation,W!NNER!! Freeee pr!ze aw@rd wa!ting 4 u. Cl@im now cal ...,SPAM,HAM,100.0%,FAIL,SPAM,99.6%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Adversarial Obfuscation,fr33 entry into 1000 c4sh draw call 09061701461 now,SPAM,SPAM,100.0%,PASS,SPAM,97.2%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Adversarial Spacing,F R E E ringtone text WIN to 80085 to claim your prize ...,SPAM,SPAM,100.0%,PASS,SPAM,100.0%,PASS,Calibrated model indicates high probability of unsolicited / fraudulent SMS pattern.
+Informal / Misspelled Ham,Heyy im gona b late 4 class coz trafick is terible rn s...,HAM,HAM,100.0%,PASS,HAM,98.3%,PASS,Calibrated model indicates high probability of legitimate communication.
+Short Conversational,Ok see u soon,HAM,HAM,100.0%,PASS,HAM,99.9%,PASS,Calibrated model indicates high probability of legitimate communication.
+Single Ambiguous Word,WINNER,SPAM,HAM,96.1%,FAIL,HAM,90.3%,FAIL,Calibrated model indicates high probability of legitimate communication.
+Numbers Only,9847120491823091823091823,INCONCLUSIVE,HAM,100.0%,FAIL,INCONCLUSIVE,N/A,PASS,Input contains numbers only without any linguistic tokens.
+Emojis Only,😀🎉🎁💰📱💸,INCONCLUSIVE,HAM,100.0%,FAIL,INCONCLUSIVE,N/A,PASS,Input contains emojis only without alphabetic tokens.
+Empty Input,,EMPTY,HAM,50.0%,FAIL,EMPTY,N/A,PASS,Input message contains only whitespace.
+Non-English (Spanish),"Hola amigo, ¿cómo estás? ¿Nos vemos mañana para almorza...",UNSUPPORTED_LANGUAGE,HAM,100.0%,FAIL,UNSUPPORTED_LANGUAGE,N/A,PASS,Non-English language (Spanish) detected. English text required.
+Non-English (French),"Bonjour, avez-vous reçu le document pour la réunion de ...",UNSUPPORTED_LANGUAGE,HAM,100.0%,FAIL,UNSUPPORTED_LANGUAGE,N/A,PASS,Non-English language (French) detected. English text required.
+Non-English (Bengali),আজকে কি তুমি আসবে? দেখা হবে বিকেলে।,UNSUPPORTED_LANGUAGE,HAM,100.0%,FAIL,UNSUPPORTED_LANGUAGE,N/A,PASS,Non-Latin script (Bengali) detected. The classifier is trained exclusively on English text.
+Mixed Language,"Bonjour my friend, please call me when you arrive at th...",HAM,HAM,91.6%,PASS,HAM,98.6%,PASS,Calibrated model indicates high probability of legitimate communication.
+Standard Long Ham,"Hi team, please remember that tomorrow's project review...",HAM,HAM,100.0%,PASS,HAM,99.6%,PASS,Calibrated model indicates high probability of legitimate communication.

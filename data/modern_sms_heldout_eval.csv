@@ -1,0 +1,61 @@
+text,label,category,source
+Your Bank of America authorization code is 639102. Never disclose this code.,0,OTP_AUTH,synthetic_modern_heldout_eval_v2
+Twilio: 820194 is your verification code.,0,OTP_AUTH,synthetic_modern_heldout_eval_v2
+Your Snapchat code is 491029. Don't share it.,0,OTP_AUTH,synthetic_modern_heldout_eval_v2
+Chase: A charge of $55.00 on card *3820 at TRADER JOE was approved.,0,BANK_NOTIFICATION,synthetic_modern_heldout_eval_v2
+"Wells Fargo: Wire transfer of $1,200 to John Smith completed.",0,BANK_NOTIFICATION,synthetic_modern_heldout_eval_v2
+Discover: Card ending 9102 was used for $32.40 at MOBIL GAS.,0,BANK_NOTIFICATION,synthetic_modern_heldout_eval_v2
+Your FedEx package #9401928 has been delivered to your front porch.,0,DELIVERY_LEGIT,synthetic_modern_heldout_eval_v2
+UPS: Delivery scheduled for tomorrow by end of day for package #1Z849102.,0,DELIVERY_LEGIT,synthetic_modern_heldout_eval_v2
+Amazon: Your order #114-8491028 has shipped via UPS.,0,DELIVERY_LEGIT,synthetic_modern_heldout_eval_v2
+Grubhub: Your food from Panda Express has arrived at your door.,0,DELIVERY_LEGIT,synthetic_modern_heldout_eval_v2
+Walgreens: Your prescription #849102 is ready for pickup at the pharmacy.,0,DELIVERY_LEGIT,synthetic_modern_heldout_eval_v2
+CVS: Flu shot appointment confirmed for tomorrow at 3:15 PM.,0,APPOINTMENT_LEGIT,synthetic_modern_heldout_eval_v2
+Kaiser Permanente: Your lab results from yesterday are now available in the portal.,0,HEALTH_LEGIT,synthetic_modern_heldout_eval_v2
+United Airlines: Flight UA 482 to Chicago is on time. Gate B12.,0,TRAVEL_LEGIT,synthetic_modern_heldout_eval_v2
+Delta: Your boarding pass is ready for flight DL 1092 to Atlanta.,0,TRAVEL_LEGIT,synthetic_modern_heldout_eval_v2
+Hilton: Your reservation #8491028 at Hilton Chicago is confirmed.,0,TRAVEL_LEGIT,synthetic_modern_heldout_eval_v2
+Lyft: Your driver David is arriving in a Silver Toyota Camry.,0,TRAVEL_LEGIT,synthetic_modern_heldout_eval_v2
+Apple: Your receipt for iCloud+ 200GB storage ($2.99) is available.,0,TRANSACTION_LEGIT,synthetic_modern_heldout_eval_v2
+Starbucks: Your Starbucks card *8491 has been auto-reloaded with $25.00.,0,TRANSACTION_LEGIT,synthetic_modern_heldout_eval_v2
+Spotify: Your subscription will renew on Nov 15 for $10.99.,0,TRANSACTION_LEGIT,synthetic_modern_heldout_eval_v2
+Nike: 25% off selected running shoes this week for reward members.,0,PROMO_LEGIT,synthetic_modern_heldout_eval_v2
+Chipotle: Buy one burrito get one free today in the Chipotle app.,0,PROMO_LEGIT,synthetic_modern_heldout_eval_v2
+Target: Save $10 when you spend $50 on household essentials this week.,0,PROMO_LEGIT,synthetic_modern_heldout_eval_v2
+Best Buy: Black Friday early access deals are live for members.,0,PROMO_LEGIT,synthetic_modern_heldout_eval_v2
+Costco: Your monthly rebate coupon of $48.20 is ready to view in app.,0,PROMO_LEGIT,synthetic_modern_heldout_eval_v2
+"Hi Sarah, are we still meeting for lunch at 12:30?",0,CONVERSATION_LEGIT,synthetic_modern_heldout_eval_v2
+"Dad, can you please pick me up from soccer practice at 5?",0,CONVERSATION_LEGIT,synthetic_modern_heldout_eval_v2
+Please remember to review chapter 4 before Monday's lecture.,0,CONVERSATION_LEGIT,synthetic_modern_heldout_eval_v2
+Happy birthday grandma! Wishing you a wonderful day with lots of love.,0,CONVERSATION_LEGIT,synthetic_modern_heldout_eval_v2
+"I am stuck in traffic on highway 101, will be about 20 minutes late.",0,CONVERSATION_LEGIT,synthetic_modern_heldout_eval_v2
+Chase Alert: Your online banking access is restricted. Verify immediately: http://chase-login-resolve.com,1,PHISHING_BANK,synthetic_modern_heldout_eval_v2
+Bank of America: Security violation on account *4810. Unlock card at http://bofa-unlock-id.info,1,PHISHING_BANK,synthetic_modern_heldout_eval_v2
+Wells Fargo: Unrecognized login from iPhone in Dallas. Cancel session at http://wellsfargo-session-check.net,1,PHISHING_BANK,synthetic_modern_heldout_eval_v2
+Citibank: Wire transfer of $890.00 pending. Reject transaction: http://citi-wire-cancel.org,1,PHISHING_BANK,synthetic_modern_heldout_eval_v2
+Apple ID: Device locked due to suspicious iCloud activity. Log in at http://appleid-security-hub.com,1,PHISHING_TECH,synthetic_modern_heldout_eval_v2
+Netflix: Payment declined. Update your credit card to keep watching: http://netflix-pay-renew.me,1,PHISHING_TECH,synthetic_modern_heldout_eval_v2
+Amazon: Your Prime membership has expired. Renew for free at http://amz-prime-renew.info,1,PHISHING_TECH,synthetic_modern_heldout_eval_v2
+"PayPal: You sent $499.00 to crypto exchange. If incorrect, dispute at http://paypal-dispute-trans.net",1,PHISHING_TECH,synthetic_modern_heldout_eval_v2
+USPS: Package 94001828 held at terminal due to $2.15 customs tax. Pay: http://usps-tax-fee.com,1,PHISHING_DELIVERY,synthetic_modern_heldout_eval_v2
+FedEx: Delivery postponed. Reschedule parcel delivery at http://fedex-parcel-update.me,1,PHISHING_DELIVERY,synthetic_modern_heldout_eval_v2
+DHL Express: Missing address details for parcel #82910. Confirm at http://dhl-address-hub.info,1,PHISHING_DELIVERY,synthetic_modern_heldout_eval_v2
+UPS Delivery: We missed you today. Pay $1.50 redelivery fee: http://ups-redelivery-pay.net,1,PHISHING_DELIVERY,synthetic_modern_heldout_eval_v2
+E-ZPass Tolls: You have $6.40 in unpaid toll fees. Pay before midnight: http://ezpass-toll-now.org,1,PHISHING_TOLL,synthetic_modern_heldout_eval_v2
+TxTag: Past due toll invoice #84910 of $5.20. Avoid $100 court fee: http://txtag-toll-pay.info,1,PHISHING_TOLL,synthetic_modern_heldout_eval_v2
+FastTrak: Final notice for unpaid bridge toll. Settle: http://fastrak-toll-online.com,1,PHISHING_TOLL,synthetic_modern_heldout_eval_v2
+"Coinbase: 2.5 ETH transfer approved. If unauthorized, stop immediately: http://coinbase-cancel-eth.org",1,CRYPTO_SCAM,synthetic_modern_heldout_eval_v2
+Kraken Support: Wallet login from unknown device. Verify identity at http://kraken-login-verify.me,1,CRYPTO_SCAM,synthetic_modern_heldout_eval_v2
+Metamask: Your wallet seed phrase requires security update: http://metamask-security-update.info,1,CRYPTO_SCAM,synthetic_modern_heldout_eval_v2
+"CONGRATS! You won a $1,000 Walmart Gift Card! Click to claim now: http://walmart-card-win.com",1,LOTTERY_SCAM,synthetic_modern_heldout_eval_v2
+Home Depot: Selected customer reward! Claim a free $500 tool kit at http://homedepot-gift-claim.net,1,LOTTERY_SCAM,synthetic_modern_heldout_eval_v2
+Costco Sweepstakes: You have been chosen for the $750 Costco gas card! Redeem: http://costco-sweep-win.org,1,LOTTERY_SCAM,synthetic_modern_heldout_eval_v2
+"IRS Warning: You have an unclaimed tax rebate check of $1,850. Deposit here: http://irs-tax-rebate.me",1,TAX_SCAM,synthetic_modern_heldout_eval_v2
+Social Security Notice: Legal warrant issued against your SSN. Call 1-888-491-0192 to resolve.,1,IMPERSONATION_SCAM,synthetic_modern_heldout_eval_v2
+"Hardship Loan: Approved for $15,000 immediate cash loan! Bad credit ok! Apply: http://fast-cash-24h.com",1,LOAN_SCAM,synthetic_modern_heldout_eval_v2
+"W!NNER! Selected for $1,000 c4sh pr!ze! Cl@im now: http://prize-claim-now.org",1,ADVERSARIAL_SPAM,synthetic_modern_heldout_eval_v2
+"Fr33 entry into £10,000 lottery! Txt WIN to 88088 immediately!",1,ADVERSARIAL_SPAM,synthetic_modern_heldout_eval_v2
+C@LL 09061701461 now to claim your £500 voucher!,1,ADVERSARIAL_SPAM,synthetic_modern_heldout_eval_v2
+F R E E ringtones and wallpapers! Text YES to 80085 to download!,1,ADVERSARIAL_SPAM,synthetic_modern_heldout_eval_v2
+Urgent: C4sh bonus of $500 awaiting your confirmation at http://cash-bonus-claim.me,1,ADVERSARIAL_SPAM,synthetic_modern_heldout_eval_v2
+P-A-C-K-A-G-E held at depot! Cl!ck http://depot-parcel.info to arrange release,1,ADVERSARIAL_SPAM,synthetic_modern_heldout_eval_v2

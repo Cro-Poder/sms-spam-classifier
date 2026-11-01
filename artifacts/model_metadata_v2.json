@@ -1,0 +1,43 @@
+{
+    "version": "2.0.0",
+    "model_name": "Calibrated Linear SVM (Combined Word + Char TF-IDF)",
+    "model_path": "artifacts\\final_model_v2.joblib",
+    "historical_test_metrics": {
+        "accuracy": 0.9874274661508704,
+        "precision": 0.9916666666666667,
+        "recall": 0.9083969465648855,
+        "f1_score": 0.9482071713147411,
+        "roc_auc": 0.9972272239270286,
+        "pr_auc": 0.9904962513006209,
+        "true_negatives": 902,
+        "false_positives": 1,
+        "false_negatives": 12,
+        "true_positives": 119,
+        "confusion_matrix": [
+            [
+                902,
+                1
+            ],
+            [
+                12,
+                119
+            ]
+        ]
+    },
+    "modern_eval_metrics": {
+        "accuracy": 0.9833333333333333,
+        "precision": 0.967741935483871,
+        "recall": 1.0,
+        "f1_score": 0.9836065573770492,
+        "roc_auc": 1.0,
+        "pr_auc": 1.0,
+        "true_negatives": 29,
+        "false_positives": 1,
+        "false_negatives": 0,
+        "true_positives": 30
+    },
+    "train_samples": 4255,
+    "test_samples": 1034,
+    "modern_eval_samples": 60,
+    "random_state": 42
+}
