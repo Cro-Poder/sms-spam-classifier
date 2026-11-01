@@ -438,13 +438,17 @@ with tab_v1_v2:
     st.markdown("---")
     st.markdown("#### 🧪 Qualitative 24-Scenario Stress Test Matrix")
     if not stress_test_df.empty:
+        styler = stress_test_df[[
+            "Category", "Input", "Expected", "V1_Prediction", "V1_Result", "V2_Verdict", "V2_Result", "V2_Confidence"
+        ]].style
+        style_fn = lambda val: "background-color: #DCFCE7; color: #166534;" if val == "PASS" else ("background-color: #FEE2E2; color: #991B1B;" if val == "FAIL" else "")
+        # Use Styler.map (standard in pandas >= 2.1 and pandas 3.0+), falling back to applymap for older pandas
+        if hasattr(styler, "map"):
+            styled_df = styler.map(style_fn, subset=["V1_Result", "V2_Result"])
+        else:
+            styled_df = styler.applymap(style_fn, subset=["V1_Result", "V2_Result"])
         st.dataframe(
-            stress_test_df[[
-                "Category", "Input", "Expected", "V1_Prediction", "V1_Result", "V2_Verdict", "V2_Result", "V2_Confidence"
-            ]].style.applymap(
-                lambda val: "background-color: #DCFCE7; color: #166534;" if val == "PASS" else ("background-color: #FEE2E2; color: #991B1B;" if val == "FAIL" else ""),
-                subset=["V1_Result", "V2_Result"]
-            ),
+            styled_df,
             use_container_width=True
         )
 
