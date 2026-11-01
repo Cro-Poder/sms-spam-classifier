@@ -31,20 +31,26 @@ An end-to-end, leak-free, production-grade **SMS Spam Classification System** in
 
 ---
 
-## 📊 2. Dataset Documentation & Sources
+## 📊 2. Dataset Documentation, Provenance & Licensing
 
-The project maintains strict isolation across three datasets:
+The project strictly distinguishes between **authentic historical benchmark data** and **synthetic modern evaluation templates**:
 
-1. **Historical Dataset (`data/spam.csv`):**
-   * *Source:* SMS Spam Collection benchmark (Almeida et al., 2011).
-   * *Total Unique Messages:* 5,169 (4,516 Ham, 653 Spam) after deduplicating 403 rows and merging unescaped CSV fragments.
-   * *Split:* 80% Train (4,135 samples), 20% Held-Out Test (1,034 samples: 903 Ham, 131 Spam). Stratified split identical for both V1 and V2.
-2. **Modern Augmented Training Dataset (`data/modern_sms_augmented_train.csv`):**
-   * *Source:* Curated synthetic modern templates (60 modern Ham [OTP, banking alerts, delivery, legitimate promotions] + 60 modern Spam [delivery phishing, toll scams, account suspension, crypto scams]).
-   * *Purpose:* Augments the historical training fold (Total V2 Train = 4,255 samples).
-3. **Modern External Held-Out Evaluation Dataset (`data/modern_sms_heldout_eval.csv`):**
-   * *Source:* Independent synthetic test templates (30 modern Ham + 30 modern Spam).
-   * *Purpose:* Strictly isolated external evaluation set **never seen during training or tuning**. Zero string overlap with training sets.
+### 2.1 Historical Dataset (`data/spam.csv` / root `spam.csv`)
+* **Source & Citation:** SMS Spam Collection, curated by Tiago A. Almeida and José María Gómez Hidalgo (University of Campinas / University of São Paulo, 2011). Available via the [UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/228/sms+spam+collection).
+* **Licensing & Redistribution:** Creative Commons Attribution 4.0 International (CC BY 4.0). Redistribution and modification are freely permitted with attribution.
+* **Corpus Composition:** 5,572 historical SMS messages collected from the Grumbletext UK forum, NUS SMS Corpus, and Caroline Tag's PhD thesis corpus.
+* **Deduplication & Preprocessing:** The dataset contains 403 duplicates and occasional trailing comma fragments (`v3`, `v4`, `v5`). The loader resolves these into **5,169 unique, verified messages** (4,516 Ham, 653 Spam).
+* **Data Leakage Safeguard:** Split into an 80% Training set (4,135 samples) and a 20% Held-Out Test set (1,034 samples: 903 Ham, 131 Spam) using stratified sampling before any feature vectorization or vocabulary construction.
+
+### 2.2 Modern Augmented Training Dataset (`data/modern_sms_augmented_train.csv`)
+* **Origin & Nature:** **Synthetically authored templates** (120 samples: 60 Ham, 60 Spam).
+* **Reasoning for Synthetic Generation:** Modern SMS messages frequently contain Personally Identifiable Information (PII) such as personal phone numbers, bank accounts, or private authentication codes. To eliminate PII privacy risks while adapting the model to modern 2026 SMS patterns (such as Chase/Google 2FA OTP codes, package delivery notifications, crypto phishing, and toll fee scams), realistic synthetic exemplars were authored.
+* **Usage:** Merged exclusively into the training fold for Version 2 (Total V2 Train = 4,255 samples). Never included in the historical test fold.
+
+### 2.3 Modern External Held-Out Evaluation Dataset (`data/modern_sms_heldout_eval.csv`)
+* **Origin & Nature:** **Synthetically authored templates** (60 samples: 30 Ham, 30 Spam).
+* **Isolation Guarantee:** Strictly isolated external benchmark dataset with **zero vocabulary/template overlap** with the training data.
+* **Usage:** Used exclusively to objectively stress-test generalization against modern OTP false positives and contemporary phishing evasion. Never seen during training or cross-validation.
 
 ---
 
@@ -186,5 +192,7 @@ Open your browser at `http://localhost:8501`. Use the sidebar switcher to toggle
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License.
+## 📄 License & Attribution
+* **Software Codebase:** Distributed under the [MIT License](LICENSE).
+* **Historical SMS Dataset:** Sourced from the SMS Spam Collection by Tiago A. Almeida and José María Gómez Hidalgo, licensed under the [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/) license.
+* **Modern Synthetic Datasets:** Authored specifically for this research project and released into the public domain under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/).

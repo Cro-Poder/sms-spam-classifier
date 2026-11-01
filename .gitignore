@@ -20,6 +20,8 @@ htmlcov/
 
 # Streamlit
 .streamlit/secrets.toml
+.env
+*.log
 
 # IDE & OS
 .vscode/
