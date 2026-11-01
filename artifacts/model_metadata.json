@@ -1,0 +1,35 @@
+{
+    "model_name": "BernoulliNB",
+    "model_path": "artifacts\\final_model.joblib",
+    "test_metrics": {
+        "accuracy": 0.9854932301740812,
+        "precision": 1.0,
+        "recall": 0.8854961832061069,
+        "f1_score": 0.9392712550607287,
+        "specificity": 1.0,
+        "roc_auc": 0.9970666058008504,
+        "false_positives": 0,
+        "false_negatives": 15,
+        "true_positives": 116,
+        "true_negatives": 903,
+        "confusion_matrix": [
+            [
+                903,
+                0
+            ],
+            [
+                15,
+                116
+            ]
+        ]
+    },
+    "train_samples": 4135,
+    "test_samples": 1034,
+    "random_state": 42,
+    "pipeline_steps": [
+        "preprocessor",
+        "vectorizer",
+        "classifier"
+    ],
+    "hyperparameters": "{'memory': None, 'steps': [('preprocessor', TextPreprocessor()), ('vectorizer', TfidfVectorizer(max_features=3000)), ('classifier', BernoulliNB(alpha=0.2))], 'transform_input': None, 'verbose': False, 'preprocessor': TextPreprocessor(), 'vectorizer': TfidfVectorizer(max_features=3000), 'classifier': BernoulliNB(alpha=0.2), 'preprocessor__remove_stopwords': True, 'preprocessor__stem': True, 'vectorizer__analyzer': 'word', 'vectorizer__binary': False, 'vectorizer__decode_error': 'strict', 'vectorizer__dtype': <class 'numpy.float64'>, 'vectorizer__encoding': 'utf-8', 'vectorizer__input': 'content', 'vectorizer__lowercase': True, 'vectorizer__max_df': 1.0, 'vectorizer__max_features': 3000, 'vectorizer__min_df': 1, 'vectorizer__ngram_range': (1, 1), 'vectorizer__norm': 'l2', 'vectorizer__preprocessor': None, 'vectorizer__smooth_idf': True, 'vectorizer__stop_words': None, 'vectorizer__strip_accents': None, 'vectorizer__sublinear_tf': False, 'vectorizer__token_pattern': '(?u)\\\\b\\\\w\\\\w+\\\\b', 'vectorizer__tokenizer': None, 'vectorizer__use_idf': True, 'vectorizer__vocabulary': None, 'classifier__alpha': 0.2, 'classifier__binarize': 0.0, 'classifier__class_prior': None, 'classifier__fit_prior': True, 'classifier__force_alpha': True}"
+}
